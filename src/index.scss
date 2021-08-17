@@ -1,0 +1,805 @@
+* {
+  font-family: "Patrick Hand", cursive;
+}
+// $primary
+$yellow: #d49a3a;
+$light: #f3f0eb;
+$light-low: #f3f0eb2d;
+$dark: var(--bs-dark);
+$brown: #39311d;
+$secondary: #0a686e;
+$lightSecondary: #93a7a871;
+$darkSecondary: #042628;
+$grey: #666;
+$lightYellow: #e9e4db;
+$lightMoreYellow: #d8d1c3;
+$pop: "Poppins", sans-serif;
+
+// navbar
+.navbar {
+  .logo {
+    .yellowColor {
+      color: $yellow;
+    }
+    .tagLine {
+      letter-spacing: 7px;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 30px;
+      color: $light;
+      margin-bottom: 0;
+      &:last-child {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+  ul li a {
+    font-size: 25px;
+  }
+}
+// landingPage
+.landingPage,
+.aboutus,
+.causesMain,
+.ourBlogs,
+.contactpage {
+  background: rgb(10, 79, 83);
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.5) 0%,
+      rgba(57, 49, 29, 0.5) 100%
+    ),
+    url(./Components/assets/img/banner1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  .landingPage_content {
+    padding: 8.6rem 0;
+    p {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    button,a {
+      font-size: 22px;
+      border-radius: 50px;
+      padding: 0.5rem 1.5rem;
+    }
+    .joinBtn {
+      margin: 1rem 0;
+      background: $yellow;
+    }
+    .watchbtn {
+      margin-left: 1rem;
+    }
+  }
+}
+// service
+.service {
+  // left
+  .service_left {
+    padding: 7rem 0;
+    .sub-heading {
+      color: $yellow;
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 60px;
+      color: $brown;
+    }
+    p {
+      font-family: $pop;
+      color: $grey;
+    }
+    .btns {
+      padding-right: 1rem;
+      margin: 1rem 0;
+      cursor: pointer;
+      .btn_section {
+        padding: 1.8rem;
+        width: 100%;
+        text-align: center;
+        svg {
+          background: $yellow;
+          padding: 0.6rem !important;
+          border-radius: 50%;
+          font-size: 60px;
+          display: block;
+          margin: 0 auto;
+          padding: 0.3rem;
+          color: $light;
+        }
+        p {
+          padding: 0.5rem 0;
+        }
+        &:hover {
+          background: $secondary;
+          border-radius: 10px;
+          p {
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+  // right
+  .service_right {
+    position: relative;
+    background: $brown;
+    .service_right_top {
+      background: $secondary;
+      padding: 1.5rem 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: absolute;
+      width: 100%;
+      top: -8.2%;
+      left: 52.5%;
+      transform: translate(-50%, -50%);
+      svg {
+        font-size: 70px;
+        display: block;
+        margin: 0 auto;
+        color: $yellow;
+      }
+      h2 {
+        font-size: 60px;
+        color: $light;
+      }
+      p {
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: $yellow;
+      }
+    }
+    .formStart {
+      padding: 8rem 1rem;
+      p {
+        color: $yellow;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      h2 {
+        font-size: 35px;
+        color: $light;
+      }
+      label {
+        color: $light;
+      }
+      button {
+        font-size: 22px;
+        background: $yellow;
+        margin: 1rem 0;
+        padding: 0.7rem 0;
+        color: $light;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      select {
+        border: transparent;
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 4px;
+        box-shadow: none;
+        height: 50px;
+        padding: 15px;
+        font-family: sans-serif;
+        &:focus {
+          background: rgba(255, 255, 255, 0.05);
+        }
+      }
+      select {
+        option {
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+// technicalStatistics
+.technicalStatistics {
+  .header {
+    p {
+      font-family: $pop;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 50px;
+      padding: 1rem 0;
+    }
+  }
+  background: rgb(10, 79, 83);
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.9) 0%,
+      rgba(57, 49, 29, 0.8) 100%
+    ),
+    url(./Components/assets/img/banner5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  color: $light;
+  .technicalStatisticsCards {
+    text-align: center;
+    .col-md-3 {
+      padding: 1rem;
+    }
+    .technicalStatistics_card {
+      padding: 2.5rem;
+      background: $light-low;
+      border-radius: 10px;
+      svg {
+        font-size: 55px;
+      }
+      h3 {
+        font-size: 40px;
+        font-family: $pop;
+      }
+      p {
+        font-family: $pop;
+      }
+    }
+  }
+}
+// ourCauses
+.ourCauses {
+  padding: 5rem 0;
+  .header {
+    p {
+      text-align: center;
+      font-family: $pop;
+      font-weight: 600;
+      color: $yellow;
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: $brown;
+    }
+  }
+  .card {
+    background: $lightYellow;
+    margin: 0.2rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    .card-body {
+      padding: 0;
+      .card-content {
+        padding: 1.3rem;
+        .card-title {
+          font-size: 28px;
+          color: $brown;
+        }
+        .card-text {
+          font-family: $pop;
+          padding: 1rem 0;
+        }
+      }
+      .card-progress {
+        padding: 2.5rem 1rem;
+        font-size: 20px;
+        background: $lightMoreYellow;
+        transition: all 0.3s ease 0s;
+        .card-progress_second {
+          padding-top: 1rem;
+          .fifteen {
+            color: $secondary;
+          }
+        }
+        .progress-bar {
+          background: $secondary;
+          border: 0px !important;
+        }
+      }
+    }
+    &:hover {
+      background: $lightMoreYellow;
+      .card-progress {
+        background: $yellow;
+      }
+    }
+  }
+}
+// loveCareCharity
+.loveCareCharity {
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.6) 0%,
+      rgba(57, 49, 29, 0.6) 100%
+    ),
+    url(Components/assets/img/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  padding: 7rem 0;
+  text-align: center;
+  p {
+    font-family: $pop;
+    font-weight: 600;
+    color: $yellow;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  button.donate,
+  button.becameVol {
+    background: $yellow;
+    color: $light;
+    margin: 0.5rem;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-family: $pop;
+  }
+  button.becameVol {
+    background: $secondary;
+  }
+}
+// ourVolunteer
+.ourVolunteer {
+  padding: 5rem 0;
+  .header {
+    p {
+      text-align: center;
+      font-family: $pop;
+      font-weight: 600;
+      color: $yellow;
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: $brown;
+    }
+  }
+  .ourVolunteer_section {
+    padding-top: 7rem;
+    .ourVolunteer_section_items {
+      position: relative;
+      padding: 7rem 1rem 2rem 1rem;
+      transition: all 0.3s ease 0s;
+      .ourVolunteer_section_img {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        img {
+          width: 100%;
+          max-width: 200px;
+          max-height: 200px;
+        }
+      }
+      .ourVolunteer_section_content {
+        p {
+          font-family: $pop;
+          font-weight: 500;
+          color: $grey;
+        }
+        .volunp {
+          color: $yellow;
+        }
+        .footer_social_icon {
+          svg {
+            margin: 5px;
+            color: $light;
+            background: $yellow;
+            font-size: 32px;
+            padding: 6px;
+            border-radius: 50%;
+            transition: all 0.3s ease 0s;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .ourVolunteer_section_content {
+        width: 100%;
+        z-index: -1;
+      }
+      &:hover {
+        background: $secondary;
+        border-radius: 5px;
+        cursor: pointer;
+        .ourVolunteer_section_content {
+          .footer_social_icon {
+            svg {
+              background: $lightSecondary;
+              color: $light;
+            }
+          }
+        }
+        .ourVolunteer_section_content_p {
+          color: $light;
+        }
+        .ourVolunteer_section_content_title {
+          color: $light;
+        }
+      }
+    }
+  }
+}
+// testimonials
+.testimonials {
+  padding: 5rem 0;
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.6) 0%,
+      rgba(57, 49, 29, 0.6) 100%
+    ),
+    url(Components/assets/img/banner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  text-align: center;
+  .header {
+    p {
+      text-align: center;
+      font-family: $pop;
+      font-weight: 600;
+      color: $yellow;
+      margin-bottom: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: $light;
+      padding-bottom: 1rem;
+    }
+  }
+  // card
+  .card {
+    background: $yellow;
+    color: $dark;
+    margin: 0 5px;
+    padding: 2rem;
+    p {
+      font-family: $pop;
+      text-align: left;
+      color: $light;
+    }
+    img {
+      max-width: 80px;
+    }
+    h5 {
+      font-size: 20px;
+      font-family: $pop;
+      color: $light;
+    }
+  }
+}
+// careChildren-right
+.careChildren {
+  .careChildren-right {
+    padding: 7rem 1rem;
+    .header {
+      p {
+        font-family: $pop;
+        font-weight: 600;
+        color: $yellow;
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 60px;
+        color: $brown;
+        padding-bottom: 1rem;
+      }
+    }
+    .content-careChildren {
+      p {
+        font-size: 18px;
+        font-family: $pop;
+        color: $grey;
+      }
+      button.voluenteer {
+        margin: 1rem 0;
+        padding: 18px 25px;
+        background: $secondary;
+        color: $light;
+        border-radius: 50px;
+        font-family: $pop;
+      }
+    }
+  }
+}
+// blog
+.blog {
+  padding: 3rem 0;
+  .header {
+    p {
+      text-align: center;
+      font-family: $pop;
+      font-weight: 600;
+      color: $yellow;
+      margin-bottom: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: $brown;
+      padding-bottom: 1rem;
+    }
+  }
+  .card {
+    .card-body {
+      position: relative;
+      .card-pallet {
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 300px;
+        text-align: center;
+        background: $light;
+        border-radius: 5px;
+        padding: 10px;
+        span {
+          font-family: $pop;
+          padding: 10px;
+          color: $yellow;
+        }
+        small {
+          font-family: $pop;
+          display: block;
+        }
+      }
+      .card-content {
+        padding: 2.5rem 1rem;
+        .card-title {
+          font-size: 25px;
+          text-align: center;
+        }
+        .card-text {
+          color: $grey;
+          font-family: $pop;
+          text-align: center;
+        }
+        a {
+          background: $secondary;
+          font-family: $pop;
+          color: $light;
+          padding: 12px 20px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+// footer
+.footer {
+  padding: 3rem 0;
+  background: $darkSecondary;
+  color: $light;
+  .header {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 0;
+      .yellow {
+        color: $yellow;
+      }
+    }
+    p {
+      font-family: $pop;
+      font-weight: 600;
+    }
+  }
+  .footer_content {
+    padding: 2rem 0 1rem 0;
+    font-family: $pop;
+  }
+  .footer_social_icon {
+    svg {
+      margin: 0 2px;
+      font-size: 40px;
+      background: $yellow;
+      border-radius: 5px;
+      padding: 8px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background: $lightSecondary;
+        cursor: pointer;
+      }
+    }
+  }
+  .footer_middle {
+    h4 {
+      font-family: $pop;
+      font-size: 22px;
+    }
+    .footer_middle_content {
+      padding: 2rem 0;
+      small {
+        color: $grey;
+        span {
+          font-family: $pop;
+          padding: 2px;
+        }
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .footer_right {
+    h4 {
+      font-family: $pop;
+      font-size: 22px;
+    }
+    address {
+      margin-top: 2rem;
+      font-family: $pop;
+    }
+    p {
+      a {
+        color: $light;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+// copyright
+.copyright {
+  background: $secondary;
+  padding: 3rem 0;
+  p {
+    margin: 0;
+    font-family: $pop;
+    color: $light;
+  }
+}
+// Pages
+.aboutus {
+  background: rgb(10, 79, 83);
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.5) 0%,
+      rgba(57, 49, 29, 0.5) 100%
+    ),
+    url(./Components/assets/img/banner4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  .landingPage_content {
+    padding: 11rem 0;
+  }
+}
+// causesPage
+.causesMain {
+  background: rgb(10, 79, 83);
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.5) 0%,
+      rgba(57, 49, 29, 0.5) 100%
+    ),
+    url(./Components/assets/img/banner6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  .landingPage_content {
+    padding: 11rem 0;
+  }
+}
+// ourBlogs
+.ourBlogs {
+  background: rgb(10, 79, 83);
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.7) 0%,
+      rgba(57, 49, 29, 0.8) 100%
+    ),
+    url(./Components/assets/img/banner7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  .landingPage_content {
+    padding: 11rem 0;
+  }
+}
+// mapArea
+.mapArea {
+  background: $light;
+  .mapArea-container {
+    background: var(--bs-white);
+    .map-content {
+      padding: 2rem;
+      .textLine {
+        font-family: $pop;
+        color: $grey;
+      }
+      .map-Address {
+        p,
+        a {
+          font-family: $pop;
+        }
+        .grey {
+          color: $grey;
+        }
+        .yellow {
+          color: $yellow;
+        }
+      }
+      .map-form {
+        input,
+        textarea {
+          border-radius: 0px;
+          font-family: $pop;
+          border: 1px solid $lightSecondary;
+        }
+        input[type="submit"] {
+          background: $yellow;
+          color: $light;
+          padding: 10px 20px;
+          border-radius: 50px;
+          font-family: $pop;
+        }
+      }
+      .socialSection {
+        p {
+          font-weight: 500;
+          font-size: 25px;
+          margin-bottom: 0;
+        }
+        .socialLinks {
+          padding: 1rem 0;
+          a {
+            display: inline-block;
+            padding: 10px 10px;
+            font-family: $pop;
+            text-decoration: none;
+            color: $yellow;
+            font-weight: 500;
+            transition: 0.3s;
+            font-weight: 550;
+            &:hover {
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// contactpage
+.contactpage {
+  background: rgb(10, 79, 83);
+  background: linear-gradient(
+      90deg,
+      rgba(10, 79, 83, 0.7) 0%,
+      rgba(57, 49, 29, 0.8) 100%
+    ),
+    url(./Components/assets/img/banner8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light;
+  .landingPage_content {
+    padding: 11rem 0;
+  }
+}
